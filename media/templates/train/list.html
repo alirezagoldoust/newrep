@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Data</title>
+</head>
+<body>
+    <br>
+    <h1>    Wellcome!</h1>
+    {% for tr in trains%}
+        <hr>
+        <p>{{ tr.origin }}</p>
+       <div style="color: blue;">des : </div><p>{{ tr.destination }}</p>
+        <p>{{ tr.capacity }}</p>
+        <p>{{ tr.price }}</p>
+    {% endfor %}
+
+    
+</body>
+</html>
